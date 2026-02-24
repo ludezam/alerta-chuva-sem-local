@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <h1>🌧️ Alerta de Chuva </h1> 
+  <h1>🌧️ Alerta de Chuva </h1>
 
   <div id="cidadeAtual" class="cidade-atual">
     📍 Cidade: <b>São José do Rio Preto</b>
@@ -19,7 +19,6 @@
   <div class="box">
     <div class="status" id="status">⏳ Carregando...</div>
     <div id="detalhe"></div>
-    <div id="alerta"></div>
     <div id="contador"></div>
     <div id="ultimaAtualizacao"></div>
   </div>
@@ -35,25 +34,26 @@
     <button id="btnGPS" type="button">📍 Meu local atual</button>
   </div>
 
-  <div class="mapa-fixo">
+  <div class="mapa-fixo-container">
     <small>Mapa fixo de Rio Preto-SP</small>
     <iframe
       class="mapa-fixo"
       src="https://www.rainviewer.com/map.html?loc=-20.811229,-49.375767,10&oCS=1&c=3&o=83&lm=1&layer=radar&sm=1&sn=1"
       title="Mapa fixo Rio Preto">
     </iframe>
-    <iframe id="mapa" title="Mapa de radar de chuva"></iframe>
   </div>
+
+  <div id="alerta"></div>
 
   <footer>
     <small>Desenvolvido por LDZ</small>
   </footer>
 
-<audio id="alertSound" preload="auto">
-  <source src="alerta.mp3" type="audio/mpeg">
-</audio>
+  <audio id="alertSound" preload="auto">
+    <source src="alerta.mp3" type="audio/mpeg">
+  </audio>
 
-<button id="btnRefresh">🔄 Atualizar</button>
+  <button id="btnRefresh">🔄 Atualizar</button>
 
 </body>
 </html>
