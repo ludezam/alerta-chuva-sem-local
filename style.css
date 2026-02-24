@@ -69,16 +69,17 @@ button:hover {
   opacity: 0.8;
 }
 
-iframe {
+.mapa-fixo-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mapa-fixo {
   width: 100%;
   height: clamp(250px, 50vh, 400px);
   border: none;
   border-radius: 12px;
   margin-top: 15px;
-}
-
-.mapa-fixo {
-  height: 50vh;
 }
 
 small {
@@ -87,9 +88,12 @@ small {
   opacity: 0.7;
 }
 
-/* Alerta visual */
 #alerta {
-  margin-top: 10px;
+  margin: 14px auto 0;
+  max-width: 700px;
+  background: #162235;
+  border-radius: 12px;
+  padding: 12px;
 }
 
 .alerta {
@@ -99,6 +103,18 @@ small {
   border-radius: 8px;
   font-weight: bold;
   animation: piscar 1s infinite alternate;
+}
+
+.sem-alerta {
+  background: #237a40;
+  color: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.info-clima {
+  margin-top: 8px;
 }
 
 @keyframes piscar {
