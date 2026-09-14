@@ -28,18 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ================= AUDIO =================
   // Função de alerta sonoro desativada temporariamente, sem remover o código.
-  // let audioLiberado = false;
+   let audioLiberado = false;
 
-  // document.addEventListener("click", () => {
-  //   if (!audioLiberado && audio) {
-  //     audio.play().then(() => {
-  //       audio.pause();
-  //       audio.currentTime = 0;
-  //       audioLiberado = true;
-  //       console.log("🔓 Som liberado");
-  //     }).catch(() => {});
-  //   }
-  // }, { once: true });
+    document.addEventListener("click", () => {
+     if (!audioLiberado && audio) {
+       audio.play().then(() => {
+         audio.pause();
+         audio.currentTime = 0;
+         audioLiberado = true;
+         console.log("🔓 Som liberado");
+       }).catch(() => {});
+     }
+   }, { once: true });
 
   // ================= FUNÇÕES =================
   function mostrarCidade(nome) {
